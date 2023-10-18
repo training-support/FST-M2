@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: worker-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      component: worker-deployment
+  template:
+    metadata:
+      labels:
+        component: worker-deployment
+    spec:
+      containers:
+        - name: worker-deployment
+          image: brittofrancis/simple_blog_api
+          env:
+            - name: POSTGRES_HOST
+              value: localhost
+            - name: POSTGRES_PORT
+              value: '5432'
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+
+# TODO: Add Redis Environment Variables
