@@ -1,0 +1,10 @@
+version: '3' 
+services:
+    redis-server:
+        image: docker.io/redis
+    volumes:
+        command: ["redis-server", "--save", "1 1"]  
+    nodemon-app:
+        build: .
+        ports:
+            - "8081:8081"
