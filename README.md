@@ -16,6 +16,8 @@ JMeter Project:
 - [ ] Activity 2 - Load testing an API with Authentication
 - [ ] Activity 3 - Petstore API
 
+Linux:
+- [ ] Activity 4: Create a shell script that creates 6 file each of types .png, .mp3, and .mp4. Move these to Image, Songs, and Movies folders respectively.
 Docker:
 - [ ] Activity 1 - Create and run a docker container that has a NodeJS app inside it
 - [ ] Activity 2 - Create and run a NodeJS app along with a DB container using docker networks
