@@ -26,11 +26,11 @@ The following is a checklist of activities that are to be uploaded to the repo:
 **Docker**:
 - [ ] Activity 1(Screenshot) - Command to create a container with the hello-world image
 - [ ] Activity 2(Screenshot) - Run a default commands from the CLI as soon as the container starts
-- [ ] Activity 3(Screenshot) - Various Docker CLI commands(start, stop, ps, rm, etc.)
+- [ ] Activity 3(Screenshot) - Various Podman CLI commands(start, stop, ps, rm, etc.)
 - [ ] Activity 4(Screenshot) - Pushing image to remote registries
-- [ ] Activity 5(Dockerfile) - Create and run a docker container that has a NodeJS app inside it
-- [ ] Activity 6(Dockerfile, docker-compose.yml) - Create and run a NodeJS app along with a DB container using docker networks
-- [ ] Activity 7(Dockerfile, docker-compose.yml) - Create and run a NodeJS app along with a persistently stored DB container using docker-compose
+- [ ] Activity 5(Dockerfile) - Create and run a container that has a NodeJS app inside it
+- [ ] Activity 6(Dockerfile, docker-compose.yml) - Create and run a NodeJS app along with a DB container using podman networks
+- [ ] Activity 7(Dockerfile, docker-compose.yml) - Create and run a NodeJS app along with a persistently stored DB container using podman compose
 - [ ] Activity 8(Dockerfile, docker-compose.yml) - Create and run a complex application that has multiple services
 
 
