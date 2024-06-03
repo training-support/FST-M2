@@ -42,27 +42,46 @@ The following is a checklist of activities that are to be uploaded to the repo:
 - [ ] Activity 6(Screenshot) - Kubernetes imperative deployment commands
 - [ ] Activity 7(Screenshot) - Create a configuration file to setup and run an application with multiple services and persistent storage running in a cluster
 
-**Ansible**:
-- [ ] Activity 1(YML file) - Write a simple Ansible playbook
-- [ ] Activity 2(YML file) - Write an Ansible playbook to configure an application server
-
 **Docker Project**:
 - [ ] The following files have to be uploaded - Dockerfile.dev, Dockerfile.prod, docker-compose.yml
 
 **Kubernetes Project**:
 - [ ] The following files have to be uploaded - api-deployment.yml, api-cluster-ip-service.yml, postgres-deployment.yml, postgres-cluster-ip-service.yml, ingress-service.yml, database=persistent-volume-claim.yml
 
+**OpenShift**:
+- [ ] Activity 1(Screenshot) - Log into a running OpenShift Cluster
+- [ ] Activity 2(Screenshot) - Copy file to and from a running container without rebuilding the container image
+- [ ] Activity 3(Screenshot) - Run a database with persistent storage on OpenShift
+- [ ] Activity 4(Screenshot) - Using the oc cli tool, enumerate, describe, and update application resource objects on OpenShift.
+- [ ] Activity 5(Screenshot) - Deploy a pre-built application on OpenShift with the web console and the oc command line tool
+- [ ] Activity 6(Screenshot) - Deploy an application from its source code onto OpenShift using Source-to-Image
+- [ ] Activity 7(Screenshot) - Scale an application using the Web Console and the CLI options
+
+**Ansible**:
+- [ ] Activity 1(YML file) - Write a simple Ansible playbook
+- [ ] Activity 2(YML file) - Write an Ansible playbook to configure an application server
+
+**Maven**:
+- [ ] Activity 1(Screenshot) - Running the various lifecycle commands
+- [ ] Activity 2(pom.xml) - Configure a pom.xml to use a plugin and observe how it effects the execution during build
+
 **Hadoop**:
 - [ ] Activity 1(Screenshot) - To manipulate files in the Hadoop Distributed File System(HDFS)
 - [ ] Activity 2(PIG file) - MapReduce using Pig on Text File
 - [ ] Activity 3(PIG file) - MapReduce using Pig on CSV File
-- [ ] Activity 4(HIVE file) - WordCount using Hive on Text file
-- [ ] Activity 5(HIVE file) - Analyzing Employee Data using Beeline
+- [ ] Activity 4(Screenshot) - MapReduce using Pig on Text File with localmode option
+- [ ] Activity 5(Screenshot) - MapReduce using Pig on CSV File with localmode option
+- [ ] Activity 6(HIVE file) - WordCount using Hive on Text file
+- [ ] Activity 7(HIVE file) - Analyzing employee data using Hive. Writing queries in Hive to create a table and insert data and perform various MapReduce operations.
+- [ ] Activity 8(Screenshot) - Establish a connection using it and how to create databases and tables using Beeline
+- [ ] Activity 9(HIVE file) - Using Beeline, participants will connect to a database and load data from CSV files and perform various MapReduce operations
 
-**Spark:** 
+**Spark:**
 - [ ] Activity 1(Notebook file) - Using Notebooks to run Spark computations text files
 - [ ] Activity 2(Notebook file) - Using Notebooks to run Spark computations on CSV Files
 - [ ] Activity 3(Notebook file) - Using Notebooks to run Spark computations on JSON Files
+- [ ] Activity 4(Notebook file) - Using Notebooks to run Spark computations on XML Files
+- [ ] Activity 5(Notebook file) - Using Notebooks to run Spark while connecting to a Hive database
 
 **Informatica**:
 - [ ] Activity 1(Screenshots) - Using Informatica to perform a simple Filter Mapping
@@ -75,4 +94,12 @@ The following is a checklist of activities that are to be uploaded to the repo:
 - [ ] Activity 1(PIG file) - Count the number of lines spoken by each character
 - [ ] Activity 2(HIVE file) - Count the number of lines spoken by each character
 - [ ] Activity 3(HIVE file) - Count the number of dialogues where the name "Luke" is said in EpisodeIV
-- [ ] Activity 4(Screenshot) - Create a Mapping in Informatica Cloud
+
+**Informatica Project**:
+- [ ] Activity 1(Screenshot) - Create a Mapping in Informatica Cloud to load the maximum price amongst all the cars
+- [ ] Activity 2(Screenshot) - Create a Mapping in Informatica Cloud to load the minimum price amongst all the cars
+
+**QuerySurge**:
+- [ ] Activity 1(Screenshot) - Creating QueryPairs using the Query Wizard
+- [ ] Activity 2(Screenshot) - Creating a TestSuite and executing it
+- [ ] Activity 3(Screenshot) - Creating a Table-level comparison using the Query Wizard
