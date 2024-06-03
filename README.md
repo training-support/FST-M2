@@ -24,16 +24,23 @@ The following is a checklist of activities that are to be uploaded to the repo:
 - [ ] Activity 4(.sh file) - Create a shell script that creates 6 file each of types .png, .mp3, and .mp4. Move these to Image, Songs, and Movies folders respectively.
 
 **Docker**:
-- [ ] Activity 1(Dockerfile) - Create and run a docker container that has a NodeJS app inside it
-- [ ] Activity 2(Dockerfile) - Create and run a NodeJS app along with a DB container using docker networks
-- [ ] Activity 3(Dockerfile) - Create and run a NodeJS app along with a persistently stored DB container using docker-compose
-- [ ] Activity 4(Dockerfile) - Create and run a complex application that has multiple services
+- [ ] Activity 1(Screenshot) - Command to create a container with the hello-world image
+- [ ] Activity 2(Screenshot) - Run a default commands from the CLI as soon as the container starts
+- [ ] Activity 3(Screenshot) - Various Docker CLI commands(start, stop, ps, rm, etc.)
+- [ ] Activity 4(Screenshot) - Pushing image to remote registries
+- [ ] Activity 5(Dockerfile) - Create and run a docker container that has a NodeJS app inside it
+- [ ] Activity 6(Dockerfile, docker-compose.yml) - Create and run a NodeJS app along with a DB container using docker networks
+- [ ] Activity 7(Dockerfile, docker-compose.yml) - Create and run a NodeJS app along with a persistently stored DB container using docker-compose
+- [ ] Activity 8(Dockerfile, docker-compose.yml) - Create and run a complex application that has multiple services
+
 
 **Kubernetes**:
-- [ ] Activity 1(YML file) - Create a configuration file to setup and run a simple Kubernetes cluster
-- [ ] Activity 2(YML file) - Create a configuration file to setup and run an application with multiple services running in a cluster
-- [ ] Activity 3(YML file) - Create a configuration file to setup and run a replicaset for an nginx pod
-- [ ] Activity 4(YML file) - Create a configuration file to setup and run an application with multiple services and persistent storage running in a cluster
+- [ ] Activity 1(YML files) - Create a configuration file to setup and run a simple Kubernetes cluster
+- [ ] Activity 2(Screenshot) - Commands to run and show kubectl run, describe, and delete
+- [ ] Activity 3(YML files) - Create a configuration file to setup and run an application with multiple services running in a cluster
+- [ ] Activity 4, 5(YML files) - Create a configuration file to setup and run a replicaset for an nginx pod. Using the previous nginx replicaset, update the image in the pods, and then roll it back
+- [ ] Activity 6(Screenshot) - Kubernetes imperative deployment commands
+- [ ] Activity 7(Screenshot) - Create a configuration file to setup and run an application with multiple services and persistent storage running in a cluster
 
 **Ansible**:
 - [ ] Activity 1(YML file) - Write a simple Ansible playbook
