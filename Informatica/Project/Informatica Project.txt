@@ -1,0 +1,71 @@
+Create a Mapping in Informatica Cloud to load the maximum price amongst all the cars
+To create a mapping in Informatica Cloud that loads the maximum price among all the cars, you can follow these steps. In this example, I'll outline the process assuming you have a source with car data and you want to find the maximum price from that data.
+Steps to Create the Mapping:
+1.	Create Source and Target Connections:
+o	Log in to Informatica Cloud and create connections for your source (e.g., database table containing car data) and target (e.g., database table or file where you want to load the maximum price).
+2.	Create a Mapping:
+o	Navigate to the Mappings section in Informatica Cloud and create a new mapping.
+3.	Add Source Definition:
+o	Drag and drop the source definition representing your car data into the mapping designer.
+4.	Add an Aggregator Transformation:
+o	From the transformation palette, drag and drop an Aggregator transformation onto the mapping canvas.
+5.	Configure Aggregator Transformation:
+o	Open the Aggregator transformation and configure it as follows:
+	Group By: If you have multiple cars and want the maximum price for each group (e.g., by car model), specify the columns to group by. If you want the overall maximum price, skip this step.
+	Aggregation: Add an aggregation for the price column:
+	Choose MAX as the aggregation function for the price column.
+	Rename the output port to something meaningful (e.g., MAX_PRICE).
+6.	Connect Source to Aggregator:
+o	Draw a line connecting the output of your source definition to the input of the Aggregator transformation.
+7.	Add Target Definition:
+o	Drag and drop the target definition where you want to load the maximum price (e.g., a table or a file) onto the mapping canvas.
+8.	Connect Aggregator to Target:
+o	Draw a line connecting the output of the Aggregator transformation (MAX_PRICE port) to the input of the target definition.
+9.	Map Fields:
+o	Map the MAX_PRICE output port from the Aggregator to the corresponding field in your target definition.
+10.	Validate and Save:
+o	Validate the mapping to ensure there are no errors or warnings.
+o	Save the mapping.
+11.	Run the Mapping:
+o	Execute the mapping to run the process. You can run it immediately or schedule it for later execution based on your needs.
+Additional Considerations:
+•	Parameters and Variables: You can use parameters and variables in Informatica Cloud to make your mapping more dynamic. For example, you might parameterize the source table name or the criteria for selecting cars.
+•	Error Handling: Implement error handling strategies within your mapping to manage and capture any potential errors that may occur during execution.
+•	Performance Tuning: Depending on the size of your data, consider performance tuning options such as partitioning, parallelism, and optimizing session properties.
+By following these steps, you can create a mapping in Informatica Cloud to efficiently find and load the maximum price among all the cars in your data source. This approach leverages Informatica Cloud’s capabilities to process and aggregate data effectively for your business requirements.
+Create a Mapping in Informatica Cloud to load the minimum price amongst all the cars
+To create a mapping in Informatica Cloud to load the minimum price among all the cars, you can follow these steps. This assumes you have a source containing car data and you want to extract the minimum price from that data.
+Steps to Create the Mapping:
+1.	Create Source and Target Connections:
+o	Log in to Informatica Cloud and set up connections for your source (e.g., database table containing car data) and target (e.g., database table or file where you want to load the minimum price).
+2.	Create a Mapping:
+o	Navigate to the Mappings section in Informatica Cloud and create a new mapping.
+3.	Add Source Definition:
+o	Drag and drop the source definition representing your car data into the mapping designer.
+4.	Add an Aggregator Transformation:
+o	From the transformation palette, drag and drop an Aggregator transformation onto the mapping canvas.
+5.	Configure Aggregator Transformation:
+o	Open the Aggregator transformation and configure it as follows:
+	Group By: If you have multiple cars and want the minimum price for each group (e.g., by car model), specify the columns to group by. If you want the overall minimum price, skip this step.
+	Aggregation: Add an aggregation for the price column:
+	Choose MIN as the aggregation function for the price column.
+	Rename the output port to something meaningful (e.g., MIN_PRICE).
+6.	Connect Source to Aggregator:
+o	Draw a line connecting the output of your source definition to the input of the Aggregator transformation.
+7.	Add Target Definition:
+o	Drag and drop the target definition where you want to load the minimum price (e.g., a table or a file) onto the mapping canvas.
+8.	Connect Aggregator to Target:
+o	Draw a line connecting the output of the Aggregator transformation (MIN_PRICE port) to the input of the target definition.
+9.	Map Fields:
+o	Map the MIN_PRICE output port from the Aggregator to the corresponding field in your target definition.
+10.	Validate and Save:
+o	Validate the mapping to ensure there are no errors or warnings.
+o	Save the mapping.
+11.	Run the Mapping:
+o	Execute the mapping to run the process. You can run it immediately or schedule it for later execution based on your requirements.
+Additional Considerations:
+•	Parameters and Variables: Use parameters and variables in Informatica Cloud to make your mapping more dynamic. For example, you might parameterize the source table name or the criteria for selecting cars.
+•	Error Handling: Implement error handling strategies within your mapping to manage and capture any potential errors that may occur during execution.
+•	Performance Tuning: Depending on the size of your data, consider performance tuning options such as partitioning, parallelism, and optimizing session properties to enhance the mapping's performance.
+By following these steps, you can effectively create a mapping in Informatica Cloud to extract and load the minimum price among all the cars in your data source. This approach leverages Informatica Cloud’s capabilities to process and aggregate data efficiently for your business needs.
+
