@@ -1,0 +1,71 @@
+# From my webinar for Sysdig - Exploring Kubernetes 1.18
+
+# Create A KinD or k3s cluster with no IngressController
+# Run `arkade install ingress-nginx` to add IngressNginx to the cluster as your IngressController
+
+# Save and apply all the Kubernetes YAML files below
+
+# Forward the IngressController
+# kubectl port-forward ingress-nginx-controller 8080:80
+
+# Access our service via Ingress:
+# curl localhost:8080 -d Sysdig -H "Host: openfaas-figlet.local"
+
+---
+ apiVersion: networking.k8s.io/v1beta1 # for versions before 1.14 use extensions/v1beta1
+ kind: Ingress
+ metadata:
+   name: example-ingress
+   annotations:
+     nginx.ingress.kubernetes.io/rewrite-target: /$1
+ spec:
+   rules:
+   - host: openfaas-figlet.local
+     http:
+       paths:
+       - path: /
+         backend:
+           serviceName: openfaas-figlet
+           servicePort: 8080
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: openfaas-figlet
+  labels:
+   app: openfaas-figlet
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: openfaas-figlet
+  template:
+    metadata:
+      labels:
+        app: openfaas-figlet
+    spec:
+      containers:
+      - name: openfaas-figlet
+        image: functions/figlet:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: openfaas-figlet
+  labels:
+    app: openfaas-figlet
+spec:
+  type: ClusterIP
+  ports:
+    - port: 8080
+      protocol: TCP
+      targetPort: 8080
+  selector:
+    app: openfaas-figlet
+
