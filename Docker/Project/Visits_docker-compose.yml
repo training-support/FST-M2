@@ -1,0 +1,14 @@
+version: "3"
+services:
+  redis_db:
+    image: "redis"
+    volumes:
+      - ./data:/data
+    command: ["redis-server", "--save", "1 1"]
+  node_app: 
+    build: ./
+      # context : ./
+      # dockerfile : "Dockerfile"
+    image: "ameypaithankar/visits"
+    ports: 
+        - "8081:8081"

@@ -1,0 +1,16 @@
+# specify the base image
+FROM node
+
+# Create Working Directory
+WORKDIR /usr/app
+
+# Copy files in container
+COPY package.json ./
+
+RUN npm install
+
+# Copy files in container
+COPY ./ ./
+
+#start server
+CMD ["npm","start"]
