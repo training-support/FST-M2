@@ -1,0 +1,29 @@
+-- Drop existing Table
+DROP TABLE employee;
+
+-- Create employee Table
+CREATE TABLE employee (id INT, name STRING, dept STRING, yoj INT, salary INT)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' TBLPROPERTIES ("skip.header.line.count"="1");
+
+-- Load data into the database using a file on your local system (NOT HDFS)
+LOAD DATA LOCAL INPATH 'root/EmpData.csv' INTO TABLE employee;
+
+-- Column operations
+SELECT  id, name FROM employee;
+
+-- Row operation
+SELECT * FROM employee WHERE salary > 30000;
+
+-- Column operation that need aggregation
+SELECT count(*) FROM employee;
+
+-- Exports to HDFS directory
+INSERT OVERWRITE DIRECTORY '/user/Amey/Activity5Output'
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+SELECT * FROM employee;
+
+-- Exports to LOCAL directory
+INSERT OVERWRITE LOCAL DIRECTORY 'root/Activity5Output'
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+SELECT * FROM employee;
+
