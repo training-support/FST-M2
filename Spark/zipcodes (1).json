@@ -1,0 +1,212 @@
+[
+    {
+        "RecordNumber": 1,
+        "Zipcode": 704,
+        "ZipCodeType": "STANDARD",
+        "City": "PARC PARQUE",
+        "State": "PR",
+        "WorldRegion": "NA",
+        "Country": "US",
+        "Decommisioned": false
+    },
+    {
+        "RecordNumber": 2,
+        "Zipcode": 704,
+        "ZipCodeType": "STANDARD",
+        "City": "PASEO COSTA DEL SUR",
+        "State": "PR",
+        "WorldRegion": "NA",
+        "Country": "US",
+        "Decommisioned": false
+    },
+    {
+        "RecordNumber": 10,
+        "Zipcode": 709,
+        "ZipCodeType": "STANDARD",
+        "City": "BDA SAN LUIS",
+        "State": "PR",
+        "WorldRegion": "NA",
+        "Country": "US",
+        "Decommisioned": false
+    },
+    {
+        "RecordNumber": 61391,
+        "Zipcode": 76166,
+        "ZipCodeType": "UNIQUE",
+        "City": "CINGULAR WIRELESS",
+        "State": "TX",
+        "WorldRegion": "NA",
+        "Country": "US",
+        "Decommisioned": false
+    },
+    {
+        "RecordNumber": 61392,
+        "Zipcode": 76177,
+        "ZipCodeType": "STANDARD",
+        "City": "FORT WORTH",
+        "State": "TX",
+        "WorldRegion": "NA",
+        "Country": "US",
+        "Decommisioned": false
+    },
+    {
+        "RecordNumber": 61393,
+        "Zipcode": 76177,
+        "ZipCodeType": "STANDARD",
+        "City": "FT WORTH",
+        "State": "TX",
+        "WorldRegion": "NA",
+        "Country": "US",
+        "Decommisioned": false
+    },
+    {
+        "RecordNumber": 4,
+        "Zipcode": 704,
+        "ZipCodeType": "STANDARD",
+        "City": "URB EUGENE RICE",
+        "State": "PR",
+        "WorldRegion": "NA",
+        "Country": "US",
+        "Decommisioned": false
+    },
+    {
+        "RecordNumber": 39827,
+        "Zipcode": 85209,
+        "ZipCodeType": "STANDARD",
+        "City": "MESA",
+        "State": "AZ",
+        "WorldRegion": "NA",
+        "Country": "US",
+        "Decommisioned": false
+    },
+    {
+        "RecordNumber": 39828,
+        "Zipcode": 85210,
+        "ZipCodeType": "STANDARD",
+        "City": "MESA",
+        "State": "AZ",
+        "WorldRegion": "NA",
+        "Country": "US",
+        "Decommisioned": false
+    },
+    {
+        "RecordNumber": 49345,
+        "Zipcode": 32046,
+        "ZipCodeType": "STANDARD",
+        "City": "HILLIARD",
+        "State": "FL",
+        "WorldRegion": "NA",
+        "Country": "US",
+        "Decommisioned": false
+    },
+    {
+        "RecordNumber": 49346,
+        "Zipcode": 34445,
+        "ZipCodeType": "PO BOX",
+        "City": "HOLDER",
+        "State": "FL",
+        "WorldRegion": "NA",
+        "Country": "US",
+        "Decommisioned": false
+    },
+    {
+        "RecordNumber": 49347,
+        "Zipcode": 32564,
+        "ZipCodeType": "STANDARD",
+        "City": "HOLT",
+        "State": "FL",
+        "WorldRegion": "NA",
+        "Country": "US",
+        "Decommisioned": false
+    },
+    {
+        "RecordNumber": 49348,
+        "Zipcode": 34487,
+        "ZipCodeType": "PO BOX",
+        "City": "HOMOSASSA",
+        "State": "FL",
+        "WorldRegion": "NA",
+        "Country": "US",
+        "Decommisioned": false
+    },
+    {
+        "RecordNumber": 10,
+        "Zipcode": 708,
+        "ZipCodeType": "STANDARD",
+        "City": "BDA SAN LUIS",
+        "State": "PR",
+        "WorldRegion": "NA",
+        "Country": "US",
+        "Decommisioned": false
+    },
+    {
+        "RecordNumber": 3,
+        "Zipcode": 704,
+        "ZipCodeType": "STANDARD",
+        "City": "SECT LANAUSSE",
+        "State": "PR",
+        "WorldRegion": "NA",
+        "Country": "US",
+        "Decommisioned": false
+    },
+    {
+        "RecordNumber": 54354,
+        "Zipcode": 36275,
+        "ZipCodeType": "PO BOX",
+        "City": "SPRING GARDEN",
+        "State": "AL",
+        "WorldRegion": "NA",
+        "Country": "US",
+        "Decommisioned": false
+    },
+    {
+        "RecordNumber": 54355,
+        "Zipcode": 35146,
+        "ZipCodeType": "STANDARD",
+        "City": "SPRINGVILLE",
+        "State": "AL",
+        "WorldRegion": "NA",
+        "Country": "US",
+        "Decommisioned": false
+    },
+    {
+        "RecordNumber": 54356,
+        "Zipcode": 35585,
+        "ZipCodeType": "STANDARD",
+        "City": "SPRUCE PINE",
+        "State": "AL",
+        "WorldRegion": "NA",
+        "Country": "US",
+        "Decommisioned": false
+    },
+    {
+        "RecordNumber": 76511,
+        "Zipcode": 27007,
+        "ZipCodeType": "STANDARD",
+        "City": "ASH HILL",
+        "State": "NC",
+        "WorldRegion": "NA",
+        "Country": "US",
+        "Decommisioned": false
+    },
+    {
+        "RecordNumber": 76512,
+        "Zipcode": 27203,
+        "ZipCodeType": "STANDARD",
+        "City": "ASHEBORO",
+        "State": "NC",
+        "WorldRegion": "NA",
+        "Country": "US",
+        "Decommisioned": false
+    },
+    {
+        "RecordNumber": 76513,
+        "Zipcode": 27204,
+        "ZipCodeType": "PO BOX",
+        "City": "ASHEBORO",
+        "State": "NC",
+        "WorldRegion": "NA",
+        "Country": "US",
+        "Decommisioned": false
+    }
+]
