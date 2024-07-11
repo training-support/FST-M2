@@ -1,0 +1,18 @@
+-- Drop Tables
+DROP TABLE esisodes;
+
+-- PROJECT 1 : 
+-- Creating Table
+CREATE TABLE episodes (name STRING, line STRING)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t' TBLPROPERTIES ("skip.header.line.count"="2");
+
+-- Load all 3 files into the table
+LOAD DATA LOCAL INPATH 'root/inputs/episodeIV_dialogues.txt' INTO TABLE episodes;
+LOAD DATA LOCAL INPATH 'root/inputs/episodeV_dialogues.txt' INTO TABLE episodes;
+LOAD DATA LOCAL INPATH 'root/inputs/episodeVI_dialogues.txt' INTO TABLE episodes;
+
+-- Generate output and export it
+INSERT OVERWRITE LOCAL DIRECTORY 'root/ProjectActivity1HiveOutput' ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t'
+SELECT name, COUNT(line) AS no_of_lines from episodes GROUP BY name ORDER BY no_of_lines DESC;
+
+

@@ -1,0 +1,14 @@
+-- Drop Table
+DROP TABLE episodesIV;
+
+-- Creating Table
+CREATE TABLE episodeIV (name STRING, line STRING)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t' TBLPROPERTIES ("skip.header.line.count"="2");
+
+-- Load Episode IV data into the table
+LOAD DATA LOCAL INPATH 'root/inputs/episodeIV_dialogues.txt' INTO TABLE episodeIV;
+
+-- Generate output and export it
+INSERT OVERWRITE LOCAL DIRECTORY 'root/ProjectActivity2HiveOutput'
+SELECT COUNT(*) FROM episodeIV where INSTR(line, 'Luke')>0;
+
