@@ -1,0 +1,14 @@
+---
+- hosts: app
+  become: true
+  tasks:
+    - name: Install nginx
+      dnf:
+        name: nginx
+        state: present
+      notify: start nginx
+  handlers:
+    - name: start nginx
+      systemd:
+        name: nginx
+        state: started

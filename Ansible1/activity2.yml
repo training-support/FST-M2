@@ -1,0 +1,31 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: Update all the packages
+      dnf:
+        name: '*'
+        state: latest
+    - name: Install required packages
+      dnf:
+        name:
+          - nginx
+          - firewalld
+        state: present
+      notify:
+        - Start nginx
+        - Start firewalld
+    - name: Open port 80 on the firewall
+      firewalld:
+        port: 80/tcp
+        state: enabled
+
+  handlers:
+    - name: Start nginx
+      service:
+        name: nginx
+        state: started
+    - name: Start firewalld
+      service:
+        name: firewalld
+        state: started
