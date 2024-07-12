@@ -1,5 +1,5 @@
 -- Load the CSV file
-salesTable = LOAD 'hdfs:///user/Amey/sales.csv' USING PigStorage(',') AS (Product:chararray,Price:chararray,Payment_Type:chararray,Name:chararray,City:chararray,State:chararray,Country:chararray);
+salesTable = LOAD 'hdfs:///user/shashank/sales.csv' USING PigStorage(',') AS (Product:chararray,Price:chararray,Payment_Type:chararray,Name:chararray,City:chararray,State:chararray,Country:chararray);
 -- Group data using the country column
 GroupByCountry = GROUP salesTable BY Country;
 -- Generate result format
