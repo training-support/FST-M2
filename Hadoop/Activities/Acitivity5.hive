@@ -18,12 +18,12 @@ SELECT * FROM employee WHERE salary > 30000;
 SELECT count(*) FROM employee;
 
 -- Exports to HDFS directory
-INSERT OVERWRITE DIRECTORY '/user/Amey/Activity5Output'
+INSERT OVERWRITE DIRECTORY '/user/shashank/ActivityOutput'
 ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
 SELECT * FROM employee;
 
 -- Exports to LOCAL directory
-INSERT OVERWRITE LOCAL DIRECTORY 'root/Activity5Output'
+INSERT OVERWRITE LOCAL DIRECTORY 'root/ActivityOutput'
 ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
 SELECT * FROM employee;
 
