@@ -19,7 +19,7 @@ services:
   #Express API
   api:
     build: ./server
-    image: "ameypaithankar/complex_api"
+    image: "shashank/complex_api"
     environment:
       - REDIS_HOST=redis_db
       - REDIS_PORT=6379
@@ -31,11 +31,11 @@ services:
   #Worker Service
   worker:
     build: ./worker
-    image: "ameypaithankar/complex_worker"
+    image: "shashank/complex_worker"
     environment:
       - REDIS_HOST=redis_db
       - REDIS_PORT=6379
   #Client/Frontend Service
   client:
     build: ./client
-    image: "ameypaithankar/complex_client"
+    image: "shashank/complex_client"
