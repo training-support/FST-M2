@@ -9,6 +9,6 @@ services:
     build: ./
       # context : ./
       # dockerfile : "Dockerfile"
-    image: "ameypaithankar/visits"
+    image: "shashank/visits"
     ports: 
         - "8081:8081"
