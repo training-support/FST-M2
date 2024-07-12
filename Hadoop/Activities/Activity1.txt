@@ -3,12 +3,12 @@ $ vim txtFile.txt
 $ vim csvFile.csv
 
 #copy file to hdfs
-$ hdfs dfs -put ./txtFile.txt /user/Amey
-$ hdfs dfs -put ./csvFile.csv /user/Amey
+$ hdfs dfs -put ./txtFile.txt /user/shashank
+$ hdfs dfs -put ./csvFile.csv /user/shashank
 
 #View the content of the file in hdfs
-$ hdfs dfs -cat /user/Amey/txtFile.txt
-$ hdfs dfs -cat /user/Amey/csvFile.csv
+$ hdfs dfs -cat /user/shashank/txtFile.txt
+$ hdfs dfs -cat /user/shashank/csvFile.csv
 
 
 # Open up vim, paste the text from slide 20.1 and save and exit.
@@ -18,14 +18,14 @@ $ vim txtFile.txt
 $ vim csvFile.csv
 
 # Make a textData folder on the HDFS
-$ hdfs dfs -mkdir /user/Amey/textData
+$ hdfs dfs -mkdir /user/shashank/textData
 
 # Copy the TXT file, txtFile.txt, into the textData folder in the HDFS
-$ hdfs dfs -put ./txtFile.txt /user/Amey/textData
+$ hdfs dfs -put ./txtFile.txt /user/shashank/textData
 
 # Copy the CSV file, csvFile.csv, into the textData folder in the HDFS
-$ hdfs dfs -put ./csvFile.csv /user/Amey/textData
+$ hdfs dfs -put ./csvFile.csv /user/shashank/textData
 
 # Use the stat command to get the file statistics
-$ hdfs dfs -stat "type:%F permissions:%a %u:%g size:%b name:%n" /user/Amey/textData/txtFile.txt
-$ hdfs dfs -stat "type:%F permissions:%a %u:%g size:%b name:%n" /user/Amey/textData/csvFile.csv
+$ hdfs dfs -stat "type:%F permissions:%a %u:%g size:%b name:%n" /user/shashank/textData/txtFile.txt
+$ hdfs dfs -stat "type:%F permissions:%a %u:%g size:%b name:%n" /user/shashank/textData/csvFile.csv
