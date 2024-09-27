@@ -46,13 +46,13 @@ The following is a checklist of activities that are to be uploaded to the repo:
 - [ ] The following files have to be uploaded - Dockerfile.dev, Dockerfile.prod, docker-compose.yml
 
 **Kubernetes Project**:
-- [ ] The following files have to be uploaded - api-deployment.yml, api-cluster-ip-service.yml, postgres-deployment.yml, postgres-cluster-ip-service.yml, ingress-service.yml, database=persistent-volume-claim.yml
+- [ ] The following files have to be uploaded - api-deployment.yml, api-cluster-ip-service.yml, postgres-deployment.yml, postgres-cluster-ip-service.yml, ingress-service.yml, database-persistent-volume-claim.yml
 
 **OpenShift**:
 - [ ] Activity 1(Screenshot) - Log into a running OpenShift Cluster
 - [ ] Activity 2(Screenshot) - Copy file to and from a running container without rebuilding the container image
-- [ ] Activity 3(Screenshot) - Run a database with persistent storage on OpenShift
 - [ ] Activity 4(Screenshot) - Using the oc cli tool, enumerate, describe, and update application resource objects on OpenShift.
+- [ ] Activity 3(Screenshot) - Run a database with persistent storage on OpenShift
 - [ ] Activity 5(Screenshot) - Deploy a pre-built application on OpenShift with the web console and the oc command line tool
 - [ ] Activity 6(Screenshot) - Deploy an application from its source code onto OpenShift using Source-to-Image
 - [ ] Activity 7(Screenshot) - Scale an application using the Web Console and the CLI options
