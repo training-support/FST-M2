@@ -43,7 +43,7 @@ The following is a checklist of activities that are to be uploaded to the repo:
 - [ ] Activity 7(Screenshot) - Create a configuration file to setup and run an application with multiple services and persistent storage running in a cluster
 
 **Docker Project**:
-- [ ] The following files have to be uploaded - Dockerfile.dev, Dockerfile.prod, docker-compose.yml
+- [ ] The following files have to be uploaded - Dockerfile.dev, Dockerfile.prod, docker-compose.yml, projectActivity.jmx
 
 **Kubernetes Project**:
 - [ ] The following files have to be uploaded - api-deployment.yml, api-cluster-ip-service.yml, postgres-deployment.yml, postgres-cluster-ip-service.yml, ingress-service.yml, database-persistent-volume-claim.yml
